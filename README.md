@@ -1,3 +1,5 @@
+[English](./README_EN.md) | [中文](./README.md)
+
 # 幻彩泡沫 (Phantasmal Bubble)
 
 一个基于Three.js的交互式3D泡沫艺术应用，灵感来源于邓紫棋的歌曲《泡沫》。
