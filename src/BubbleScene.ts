@@ -224,7 +224,7 @@ export class BubbleScene {
         
         if (particle.userData.life <= 0) {
           this.scene.remove(particle)
-          geometry.dispose()
+          particle.geometry.dispose()
           material.dispose()
           particles.splice(index, 1)
         }

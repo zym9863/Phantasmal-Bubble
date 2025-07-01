@@ -2,8 +2,8 @@ import * as THREE from 'three'
 
 export class Bubble {
   private mesh: THREE.Mesh | null = null
-  private geometry: THREE.SphereGeometry
-  private material: THREE.MeshPhysicalMaterial
+  private geometry!: THREE.SphereGeometry
+  private material!: THREE.MeshPhysicalMaterial
   private velocity: THREE.Vector3
   private rotationSpeed: THREE.Vector3
   private size: number
@@ -76,9 +76,7 @@ export class Bubble {
       side: THREE.DoubleSide
     })
 
-    // 添加环境贴图以增强反射效果
-    const cubeTextureLoader = new THREE.CubeTextureLoader()
-    // 这里可以加载环境贴图，暂时使用程序化生成
+    // 删除未使用的cubeTextureLoader
     this.createIridescenceEffect()
   }
 
